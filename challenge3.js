@@ -30,9 +30,8 @@ Output:
 *****************************************************************************/
 // ******************************* Solution  ********************************//
 
-const checkGaugeStatus = (gauge)=>{
-  return gauge.current > gauge.min && gauge.current < gauge.max ? true : false;
-};
+const checkGaugeStatus = (gauge)=> gauge.current > gauge.min && gauge.current < gauge.max ? true : false
+
 
 const exampleGauge = {
   current:2.4,
