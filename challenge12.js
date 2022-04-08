@@ -22,15 +22,16 @@ Output:
     ]  *****************************************************************************/
 // ******************************* Solution  ********************************//
 
-const parseTranscripts = (messages) => {
+const parseTranscripts = (messages) => messages.map(item => `${item.origin}: ${item.message}`);
 
-  const output = [];
-  for (let msg of messages) {
-    let string = `${msg.origin}: ${msg.message}`;
-    output.push(string);
-  }
-  return output;
-};
+
+// const output = [];
+// for (let msg of messages) {
+//   let string = `${msg.origin}: ${msg.message}`;
+//   output.push(string);
+// }
+// return output;
+
 
 
 const messages = [
