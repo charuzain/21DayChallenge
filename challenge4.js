@@ -37,7 +37,7 @@ Output:
 
 
 const switchToggle = (toggle) => {
-  toggle.isOn ? toggle.isOn = false : toggle.isOn = true;
+  toggle.isOn = !toggle.isOn;
   return toggle;
 };
 
@@ -47,4 +47,4 @@ const someToggle = {
 };
   
 console.log(switchToggle(someToggle));
-// console.log(switchToggle(someToggle));
+console.log(switchToggle(someToggle));
