@@ -37,5 +37,5 @@ const exampleAstronaut = {
   prefix:"Astronaut"
 };
 
-console.log(addJobToAstronaut(exampleAstronaut ,"Shuttle DJ" ));
+console.log(addJobToAstronaut(exampleAstronaut ,"Shuttle DJ"));
 
