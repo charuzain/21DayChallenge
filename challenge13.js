@@ -23,14 +23,8 @@ Output:
     false
   *****************************************************************************/
 // ******************************* Solution  ********************************//
-const checkAllGauges = (gaugeList) => {
-  for (let gauge of gaugeList) {
-    if (gauge.current <= gauge.min || gauge.current >= gauge.max) {
-      return false;
-    }
-  }
-  return true;
-};
+const checkAllGauges = (gaugeList) =>gaugeList.every(item => item.current >= item.min && item.current <= item.max);
+
 // const checkAllGauges = (gaugeList) => {
 // for(let gauge of gaugeList){
 //     if(gauge.current >= gauge.min && gauge.current<=gauge.max){
